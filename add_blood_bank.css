@@ -1,0 +1,146 @@
+/* =========================================================================
+   BLOODFLOW INVENTORY MANAGEMENT CONTROL PANEL UI STYLESHEET (BY SIYAM)
+   ========================================================================= */
+
+/* Main wrapping framework layout container rules */
+.admin-wrapper {
+  padding: 40px 0;
+  background: #edf2f7;
+  min-height: 90vh;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* The actual central modal interface design box container setup */
+.admin-box {
+  max-width: 750px;
+  margin: 0 auto;
+  background: white;
+  padding: 35px;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+  border-left: 6px solid #2c3e50;
+}
+
+.admin-box h2 {
+  color: #2c3e50;
+  margin: 0 0 10px 0;
+  font-size: 24px;
+}
+
+.admin-box p {
+  color: #666;
+  font-size: 14px;
+  margin-bottom: 25px;
+  border-bottom: 2px solid #edf2f7;
+  padding-bottom: 15px;
+}
+
+/* Dual variable inline positioning dynamic row group flex map framework */
+.row-group {
+  display: flex;
+  gap: 15px;
+  margin-bottom: 15px;
+}
+
+.field-unit {
+  flex: 1;
+}
+
+.field-unit label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 6px;
+  font-size: 13px;
+  color: #4a5568;
+}
+
+.field-unit input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #cbd5e0;
+  border-radius: 6px;
+  box-sizing: border-box;
+  outline: none;
+  font-size: 14px;
+}
+
+.field-unit input:focus {
+  border-color: #2c3e50;
+}
+
+/* Subsection header mapping title specs style block rules */
+.stock-header-title {
+  font-weight: bold;
+  color: #2c3e50;
+  font-size: 14px;
+  margin-bottom: 8px;
+}
+
+/* 4x2 matrix loop display grid algorithm definition schema rules */
+.stock-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 12px;
+  background: #f7fafc;
+  padding: 15px;
+  border-radius: 8px;
+  border: 1px dashed #cbd5e0;
+  margin-bottom: 25px;
+}
+
+/* Administration bottom utility dynamic operations control list container grid buttons styling sheet link mapping rules */
+.btn-panel {
+  display: flex;
+  gap: 10px;
+}
+
+.save-btn {
+  flex: 2;
+  background: #2c3e50;
+  color: white;
+  border: none;
+  padding: 12px;
+  font-size: 16px;
+  font-weight: bold;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.save-btn:hover {
+  background: #d32f2f;
+}
+
+.back-link {
+  flex: 1;
+  text-align: center;
+  background: #718096;
+  color: white;
+  text-decoration: none;
+  padding: 12px;
+  font-size: 15px;
+  border-radius: 6px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.back-link:hover {
+  background: #4a5568;
+}
+
+.dash-link {
+  flex: 1;
+  text-align: center;
+  background: #1a2a3a;
+  color: white;
+  text-decoration: none;
+  padding: 12px;
+  font-size: 15px;
+  border-radius: 6px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.dash-link:hover {
+  background: #2c3e50;
+}

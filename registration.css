@@ -1,0 +1,96 @@
+/* Registration Page Specific Styling */
+/* --- Global Styles for Login --- */
+body {
+  background-color: #fce4e4;
+  margin: 0;
+  font-family: "Arial", sans-serif;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.reg-container {
+  background: #ffffff;
+  width: 420px;
+  margin: 40px auto; /* Centers the box */
+  border-radius: 20px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+}
+
+/* Red Gradient Header - Exact same as Login UI */
+.reg-header {
+  background: linear-gradient(to bottom, #d32f2f, #e57373);
+  color: white;
+  text-align: center;
+  padding: 30px;
+}
+
+.reg-header .icon {
+  font-size: 35px;
+  margin-bottom: 10px;
+}
+.reg-header h1 {
+  margin: 0;
+  font-size: 24px;
+}
+.reg-header p {
+  margin: 5px 0 0;
+  font-size: 14px;
+  opacity: 0.9;
+}
+
+/* Input Fields */
+form {
+  padding: 20px 30px;
+}
+.input-box {
+  margin-bottom: 15px;
+}
+
+.input-box label {
+  display: block;
+  font-size: 13px;
+  color: #d32f2f;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.input-box input,
+.input-box select {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  outline: none;
+}
+
+/* Button Styling */
+.reg-btn {
+  background: #d32f2f;
+  color: white;
+  width: 100%;
+  padding: 12px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 16px;
+  margin-top: 10px;
+}
+
+.reg-btn:hover {
+  background: #b71c1c;
+}
+
+/* Text link at the bottom of the box */
+.auth-footer-text {
+  text-align: center;
+  font-size: 13px;
+  margin-top: 15px;
+}
+.auth-footer-text a {
+  color: #d32f2f;
+  text-decoration: none;
+  font-weight: bold;
+}

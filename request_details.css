@@ -1,0 +1,205 @@
+/* Global Reset and Box-Sizing */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* Full Details Page Styling */
+.details-wrapper {
+  background-color: #f4f7f6;
+  padding: 50px 20px; /* Mobile-er jonno side padding add kora holo */
+  min-height: 85vh;
+}
+
+.details-box {
+  max-width: 900px;
+  margin: 0 auto;
+  background: #fff;
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1); /* Shadow ektu bariye dewa holo */
+}
+
+.details-header {
+  background: #1a2a3a;
+  color: white;
+  padding: 40px;
+  position: relative;
+}
+
+.blood-badge {
+  background: #d32f2f;
+  padding: 6px 15px;
+  border-radius: 5px;
+  font-weight: bold;
+  font-size: 14px;
+  display: inline-block; /* Layout thik rakhar jonno */
+}
+
+.status-text {
+  float: right;
+  color: #b0b0b0; /* Text ektu light kora holo readability-r jonno */
+  font-style: italic;
+  font-size: 14px;
+}
+
+.location-tag {
+  margin-top: 15px;
+  color: #ccc;
+  font-size: 16px;
+}
+
+/* Info Section Layout */
+.info-section {
+  padding: 40px;
+  display: flex;
+  justify-content: space-between;
+  gap: 20px; /* Container-er majhe faka thakbe */
+}
+
+.recipient-info,
+.message-info {
+  width: 48%; /* Adjust kora holo */
+}
+
+.info-section h3 {
+  color: #1a2a3a;
+  margin-bottom: 15px;
+  border-bottom: 2px solid #f4f7f6;
+  padding-bottom: 5px;
+}
+
+.msg-text {
+  font-style: italic;
+  color: #555;
+  line-height: 1.6;
+  background: #f9f9f9; /* Message ta highlight korar jonno */
+  padding: 15px;
+  border-radius: 8px;
+}
+
+/* Donate Now Button Section */
+.action-area {
+  text-align: center;
+  padding-bottom: 40px;
+}
+
+.donate-now-btn {
+  background: #d32f2f;
+  color: white;
+  padding: 16px 60px;
+  border: none;
+  border-radius: 8px;
+  font-size: 18px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease; /* Smooth transition */
+}
+
+.donate-now-btn:hover {
+  background: #b71c1c;
+  transform: translateY(-2px); /* Hover korle ektu upore uthbe */
+  box-shadow: 0 5px 15px rgba(211, 47, 47, 0.3);
+}
+
+/* Modal Styling */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 2000; /* Z-index barano holo */
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.85); /* Black overlay ektu dark kora holo */
+}
+
+.modal-content {
+  background: #fff;
+  width: 100%;
+  max-width: 400px; /* Responsive support */
+  margin: 80px auto;
+  padding: 35px;
+  border-radius: 20px;
+  text-align: center;
+  animation: slideIn 0.3s ease; /* Notun animation add kora holo */
+}
+
+@keyframes slideIn {
+  from {
+    transform: translateY(-20px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.input-group {
+  text-align: left;
+  margin-bottom: 20px;
+}
+
+.input-group label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 8px;
+  color: #333;
+}
+
+.input-group input {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  font-size: 15px;
+  outline: none;
+  transition: border-color 0.3s;
+}
+
+.input-group input:focus {
+  border-color: #d32f2f; /* Click korle border color change hobe */
+}
+
+.confirm-commit-btn {
+  background: #d32f2f;
+  color: white;
+  width: 100%;
+  padding: 14px;
+  border: none;
+  border-radius: 8px;
+  font-weight: bold;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.confirm-commit-btn:hover {
+  background: #b71c1c;
+}
+
+.cancel-btn {
+  background: none;
+  border: none;
+  color: #888;
+  margin-top: 15px;
+  cursor: pointer;
+  font-size: 14px;
+  text-decoration: underline;
+}
+
+/* Mobile Responsive Adjustments */
+@media (max-width: 600px) {
+  .info-section {
+    flex-direction: column;
+  }
+  .recipient-info,
+  .message-info {
+    width: 100%;
+  }
+  .details-header {
+    padding: 30px 20px;
+  }
+}

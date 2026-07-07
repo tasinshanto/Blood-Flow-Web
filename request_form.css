@@ -1,0 +1,60 @@
+/* Blood Request Form Styling */
+.form-wrapper {
+  background-color: #fce4e4;
+  padding: 50px 0;
+  min-height: 80vh;
+}
+
+.request-box {
+  background: #fff;
+  width: 500px;
+  margin: 0 auto;
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+.request-header {
+  background: linear-gradient(to bottom, #d32f2f, #e57373);
+  color: white;
+  padding: 25px;
+  text-align: center;
+}
+
+.request-body {
+  padding: 30px;
+}
+
+.field-group {
+  margin-bottom: 15px;
+}
+
+.field-group label {
+  display: block;
+  font-weight: bold;
+  color: #d32f2f;
+  font-size: 14px;
+  margin-bottom: 5px;
+}
+
+.field-group input,
+.field-group select,
+.field-group textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  outline: none;
+}
+
+.post-btn {
+  background: #d32f2f;
+  color: white;
+  width: 100%;
+  padding: 12px;
+  border: none;
+  border-radius: 5px;
+  font-weight: bold;
+  cursor: pointer;
+  margin-top: 10px;
+}
